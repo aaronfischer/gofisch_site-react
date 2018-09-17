@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Swiper from 'swiper';
+import Swiper from 'swiper/dist/js/swiper.js'
 
 function setupSwiper() {
   var mySwiper = new Swiper('.swiper-profile', {
