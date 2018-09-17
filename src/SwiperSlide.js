@@ -8,7 +8,7 @@ class SwiperSlide extends Component {
 
   render() {
     return (
-      <div className="swiper-slide bg-contain slide-{this.props.slide}">
+      <div className={`swiper-slide bg-contain slide-${this.props.slide}`}>
           <div className="img row cf bg-contain" style={{backgroundImage:`url(${this.props.img})`}}></div>
           <div className="row cf pos-ab">
               <div className="col-16 pad-col-12 ci">
