@@ -52,8 +52,10 @@ class FlickrSlider extends Component {
     );
 
     return (
-      <div className="swiper-wrapper">
-        {isLoading ? "..." : slides }
+      <div className="swiper-container swiper-profile ac">
+        <div className="swiper-wrapper">
+          {isLoading ? "..." : slides }
+        </div>
       </div>
     );
   }

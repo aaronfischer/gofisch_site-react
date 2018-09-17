@@ -107,6 +107,7 @@ h5,
     font-family:$defaultFont;
     text-transform:uppercase;
     font-weight:900;
+    letter-spacing:0.06em;
     font-size: 0.9em;
 }
 
@@ -203,16 +204,16 @@ pre code {
 
 
 
-// @font-face {
-//   font-family: 'fontello';
-//   src: url('../font/fontello.eot?92578952');
-//   src: url('../font/fontello.eot?92578952#iefix') format('embedded-opentype'),
-//        url('../font/fontello.woff?92578952') format('woff'),
-//        url('../font/fontello.ttf?92578952') format('truetype'),
-//        url('../font/fontello.svg?92578952#fontello') format('svg');
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'fontello';
+  src: url('/assets/font/fontello.eot?92578952');
+  src: url('/assets/font/fontello.eot?92578952#iefix') format('embedded-opentype'),
+       url('/assets/font/fontello.woff?92578952') format('woff'),
+       url('/assets/font/fontello.ttf?92578952') format('truetype'),
+       url('/assets/font/fontello.svg?92578952#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*

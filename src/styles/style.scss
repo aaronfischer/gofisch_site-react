@@ -45,7 +45,7 @@ aside{
     bottom:0;
     overflow-y:auto;
     overflow-x:hidden;
-    background-color:rgba(black,0.3);
+    background-color:rgba(black,0.35);
     @include breakpoint(pad){
         height:100%;
     }
@@ -75,7 +75,7 @@ section{
 .vcard{
     color:white;
     h1,h2,h3,h4,h5,h6{
-        text-shadow:0 1px 1px rgba(black,0.2);
+        text-shadow:0 1px 1px rgba(black,0.05);
     }
     h1{
         margin-top:-10%;
@@ -83,6 +83,8 @@ section{
     }
     .h5{
         font-size:0.75em;
+        padding-left:10px;
+        padding-right:10px;
     }
     .about-me{
         padding:5%;
@@ -117,7 +119,7 @@ section{
                 padding:15px 20px;
                 padding-left:21%;
                 border-bottom:1px solid rgba(black,0.075);
-                text-shadow:0 1px 1px rgba(black,0.2);
+                text-shadow:0 1px 1px rgba(black,0.1);
                 transition: color 0.3s ease;
                 &:hover{
                     color:white;
@@ -155,6 +157,51 @@ section{
         @include breakpoint(phone) {
             float:none;
         }
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    background:white !important;
+    color: #000;
+    font-size: 1.1em;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    height: 45px !important;
+    width:45px !important;
+    border-radius:50%;
+    z-index: 1;
+    opacity: .1;
+    transition:all ease 0.3s;
+    text-align:center;
+    &:hover{
+        opacity:1;
+        transition:all ease 0.3s;
+    }
+    &:focus{
+        outline:0;
+    }
+    i{
+        position:absolute;
+        margin-top:1px;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        &:before{
+            padding:0;
+            margin:0;
+        }
+    }
+}
+.swiper-button-prev{
+    i{
+        margin-left:-2px;
+    }
+}
+.swiper-button-next{
+    i{
+        margin-left:1px;
     }
 }
 

@@ -5,6 +5,8 @@ import SwiperWrapper from './SwiperWrapper';
 import SwiperSlide from './SwiperSlide';
 import GitHubProfile from './components/GitHubProfile';
 import FlickrSlider from './components/FlickrSlider';
+import FlickrProfile from './components/FlickrProfile';
+import TwitterProfile from './components/TwitterProfile';
 
 class App extends Component {
   render() {
@@ -15,25 +17,22 @@ class App extends Component {
             <div className="row cf">
               <div className="col-16 pad-col-4 desk-col-3 ac">
                 <div className="top-img">
-                  <div className="swiper-container swiper-profile ac">
-                    <FlickrSlider />
-                  </div>
+                  <FlickrSlider />
                 </div>
                 <figure className="circle  col-5 pad-col-2 desk-col-1 ci">
                   <img src="assets/media/img/me.jpg" alt="me" />
                 </figure>
                 <div className="vcard">
                   <h1 className="h3">Aaron Bryce Fischer</h1>
-                  <h2 className="h5">Web Design / Development</h2>
+                  <h2 className="h5">Front-End Engineer / Designer</h2>
                   <ul className="social list-unstyled al">
-                    <li className="twitter"><a href="http://twitter.com/aaronfischer" target="_blank"><i className="icon-twitter"></i>Tweets <span className="fr count">0</span></a></li>
-                    <li className="flickr"><a href="https://www.flickr.com/photos/aaronfischer" target="_blank"><i className="icon-flickr"></i>Photos <span className="fr count">0</span></a></li>
+                    <TwitterProfile username="aaronfischer" fetchCount="10" callbackName="callbackCity" />
+                    <FlickrProfile />
                     <GitHubProfile />
                     <li><a href="mailto:aaron@gofisching.com?subject=Contacting you via your website"><i className="icon-mail-1"></i>Email</a></li>
                   </ul>
                   <div className="about-me al">
-                    <h3 className="h4">About:</h3>
-                    <div>I am a web designer/developer, hobby-photographer, educator, student, apple nerd, and movie-lover</div>
+                    <div>I am a Front-End Engineer, hobby-photographer, educator, father, apple nerd, and movie-lover</div>
                   </div>
                 </div>
               </div>
