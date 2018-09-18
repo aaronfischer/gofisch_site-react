@@ -9,7 +9,6 @@ class TwitterProfile extends Component {
   }
 
   componentDidMount() {
-    console.log('this.props', this.props);
     const { username, fetchCount } = this.props;
     this.setState({ isLoading: true });
     axios.get(`https://api.twitter.com/1.1/users/show.json?screen_name=${username}&count=${fetchCount}`).then((data) => {

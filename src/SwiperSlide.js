@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import 'swiper/dist/css/swiper.min.css';
 
 class SwiperSlide extends Component {
-  componentDidMount() {
-    console.log('swiper-slide');
-  }
-
   render() {
     return (
       <div className={`swiper-slide bg-contain slide-${this.props.slide}`}>

@@ -5,7 +5,6 @@ import './SwiperWrapper.css';
 
 class SwiperWrapper extends Component {
   componentDidMount() {
-    console.log('swiper-wrapper');
     var mySwiper = new Swiper('.swiper-projects', {
       loop:true,
       speed: 400,
@@ -18,7 +17,6 @@ class SwiperWrapper extends Component {
   }
 
   componentWillUnmount() {
-    console.log('destroy');
     document.querySelector('.swiper-projects').destroy();
   }
 
