@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Swiper from 'swiper/dist/js/swiper.js'
 import 'swiper/dist/css/swiper.min.css';
-import './SwiperWrapper.css';
 
 class SwiperWrapper extends Component {
   componentDidMount() {
