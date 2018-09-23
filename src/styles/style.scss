@@ -116,6 +116,7 @@ section{
             a{
                 color:rgba(white,0.9);
                 display:block;
+                font-size:90%;
                 padding:15px 20px;
                 padding-left:21%;
                 border-bottom:1px solid rgba(black,0.075);
@@ -125,6 +126,10 @@ section{
                     color:white;
                     background-color:rgba(black,0.02);
                     transition:color 0.3s ease, background-color 0.3s ease;
+                }
+                &:active,
+                &:focus{
+                    outline:0;
                 }
             }
         }
@@ -217,6 +222,18 @@ height:100%;
 .slide-wedrinkin{
     background-position: center center;
     background-color:#31b69f;
+}
+.slide-ivanhoe{
+    background-position: center center;
+    background-color:#aad4ec;
+}
+.slide-tabular{
+    background-position: center center;
+    background-color:#f1f8ff;
+}
+.slide-phil{
+    background-position: center center;
+    background-color:#eee;
 }
 .slide-mmi{
     background-position: center center;

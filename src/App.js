@@ -47,6 +47,27 @@ class App extends Component {
                 link="https://appsto.re/us/SdCL4.i"
                 linkName="Download App"/>
               <SwiperSlide
+                name="Ivanhoe Brewing Co"
+                slide="ivanhoe"
+                responsibilities="Development | Wordpress | Frontend | Backend"
+                img="assets/media/img/work/ivanhoe.png"
+                link="https://ivanhoeparkbrewing.com/"
+                linkName="Visit Site"/>
+              <SwiperSlide
+                name="Ember Tabular"
+                slide="tabular"
+                responsibilities="Development | EmberJS | Ember Addon"
+                img="assets/media/img/work/tabular.png"
+                link="http://caxiam.github.io/ember-tabular/"
+                linkName="Visit Github"/>
+              <SwiperSlide
+                name="Phil Kean Designs"
+                slide="phil"
+                responsibilities="Development | Wordpress | Frontend | Backend"
+                img="assets/media/img/work/phil.png"
+                link="https://philkeandesigns.com/"
+                linkName="Visit Site"/>
+              <SwiperSlide
                 name="Modernizing Medicine"
                 slide="mmi"
                 responsibilities="Development | Wordpress | Frontend | Backend"
