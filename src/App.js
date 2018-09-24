@@ -31,7 +31,7 @@ class App extends Component {
                     <li><a href="mailto:aaron@gofisching.com?subject=Contacting you via your website"><i className="icon-mail-1"></i>Email</a></li>
                   </ul>
                   <div className="about-me al">
-                    <div>I am a Front-End Engineer, hobby-photographer, educator, father, apple nerd, and movie-lover</div>
+                    <div>I am a Front-End Engineer, hobby-photographer, educator, forever-student, father, apple nerd, and movie-lover</div>
                   </div>
                 </div>
               </div>
@@ -46,13 +46,13 @@ class App extends Component {
                 img="assets/media/img/work/wedrinkin.png"
                 link="https://appsto.re/us/SdCL4.i"
                 linkName="Download App"/>
-              <SwiperSlide
+              {/* <SwiperSlide
                 name="Ivanhoe Brewing Co"
                 slide="ivanhoe"
                 responsibilities="Development | Wordpress | Frontend | Backend"
                 img="assets/media/img/work/ivanhoe.png"
                 link="https://ivanhoeparkbrewing.com/"
-                linkName="Visit Site"/>
+                linkName="Visit Site"/> */}
               <SwiperSlide
                 name="Ember Tabular"
                 slide="tabular"
