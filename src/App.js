@@ -64,6 +64,97 @@ class App extends Component {
                       </a>
                     </li>
                   </ul>
+                  Things I Use:
+                  <ul className="social list-unstyled ac">
+                    <li>
+                      <a href="https://dribbble.com/aaronfischer" target="_blank">
+                        <i className="fab fa-bitbucket"></i>
+                        <span className="hoverable ac">
+                          BitBucket
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://dribbble.com/aaronfischer" target="_blank">
+                        <i className="fab fa-html5"></i>
+                        <span className="hoverable ac">
+                          HTML5
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://dribbble.com/aaronfischer" target="_blank">
+                        <i className="fab fa-sass"></i>
+                        <span className="hoverable ac">
+                          SASS
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://dribbble.com/aaronfischer" target="_blank">
+                        <i className="fab fa-digital-ocean"></i>
+                        <span className="hoverable ac">
+                          Digital Ocean
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://dribbble.com/aaronfischer" target="_blank">
+                        <i className="fab fa-js"></i>
+                        <span className="hoverable ac">
+                          Javascript
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://dribbble.com/aaronfischer" target="_blank">
+                        <i className="fab fa-ember"></i>
+                        <span className="hoverable ac">
+                          Ember.js
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://dribbble.com/aaronfischer" target="_blank">
+                        <i className="fab fa-react"></i>
+                        <span className="hoverable ac">
+                          React.js
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://dribbble.com/aaronfischer" target="_blank">
+                        <i className="fab fa-npm"></i>
+                        <span className="hoverable ac">
+                          npm
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://dribbble.com/aaronfischer" target="_blank">
+                        <i className="fab fa-git"></i>
+                        <span className="hoverable ac">
+                          Git
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://dribbble.com/aaronfischer" target="_blank">
+                        <i className="fab fa-github"></i>
+                        <span className="hoverable ac">
+                          Github
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://dribbble.com/aaronfischer" target="_blank">
+                        <i className="fab fa-gulp"></i>
+                        <span className="hoverable ac">
+                          Gulp
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
