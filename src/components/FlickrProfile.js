@@ -35,9 +35,11 @@ class FlickrProfile extends Component {
     return (
       <li className="flickr">
         <a href={url} target="_blank">
-          <i className="icon-flickr"></i>
-          Photos
-          <span className="fr count">{isLoading ? '...' : count}</span>
+          <i className="fab fa-flickr"></i>
+          <span className="hoverable al">
+            Photos
+            <span className="fr count">{isLoading ? '...' : count}</span>
+          </span>
         </a>
       </li>
     );

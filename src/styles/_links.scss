@@ -7,7 +7,7 @@
 *
 *-------------------------------------------------------------------------*/
 
-$link-color: #C84941;
+$link-color: #FF7F11;
 
 .btn{
     position:relative;
@@ -16,21 +16,21 @@ $link-color: #C84941;
     line-height:0.9em;
     text-transform:uppercase;
     font-weight:400;
-    color:$slate;
+    color:$orange;
     padding:15px 30px;
     background-color:white;
     text-decoration: none;
-    border:1px solid $slate;
+    border:1px solid $orange;
     letter-spacing:1px;
     border-radius:50px;
     transition:all 0.3s ease;
     margin-right:10px;
     &:hover{
-        color:$slate;
-        border:1px solid darken($slate,20%);
+        color:white;
+        background-color:$orange;
         border-radius:0;
         transition:all 0.3s ease;
-        // background-color:darken($slate,20%);
+        // background-color:darken($orange,20%);
     }
     &:focus{
         outline:0;

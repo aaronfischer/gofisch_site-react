@@ -25,9 +25,11 @@ class TwitterProfile extends Component {
     return (
       <li className="twitter">
         <a href="http://twitter.com/aaronfischer" target="_blank">
-          <i className="icon-twitter"></i>
-          Tweets
-          <span className="fr count">{isLoading ? '...' : count}</span>
+          <i className="fab fa-twitter"></i>
+          <span className="hoverable al">
+            Tweets
+            <span className="fr count">{isLoading ? '...' : count}</span>
+          </span>
         </a>
       </li>
     );

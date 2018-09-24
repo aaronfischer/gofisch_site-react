@@ -12,9 +12,9 @@ class App extends Component {
     return (
       <div className="App container fh">
         <div className="row fh cf">
-          <aside className="col-16 pad-col-4 desk-col-3 ">
+          <aside className="col-16 pad-col-5 desk-col-4">
             <div className="row cf">
-              <div className="col-16 pad-col-4 desk-col-3 ac">
+              <div className="col-16 pad-col-5 desk-col-4 ac">
                 <div className="top-img">
                   <FlickrSlider />
                 </div>
@@ -22,22 +22,53 @@ class App extends Component {
                   <img src="assets/media/img/me.jpg" alt="me" />
                 </figure>
                 <div className="vcard">
-                  <h1 className="h3">Aaron Bryce Fischer</h1>
+                  <h1 className="h2">Aaron Bryce Fischer</h1>
                   <h2 className="h5">Front-End Engineer / Designer</h2>
-                  <ul className="social list-unstyled al">
+                  <div className="about-me ac">
+                    <div>I am a Front-End Engineer, <a href="https://dribbble.com/aaronfischer" target="_blank">designer</a>, <a href="https://500px.com/aaronfischer" target="_blank">hobby-photographer</a>, <a href="https://valenciacollege.edu/" target="_blank">educator</a>, forever-student, father, apple nerd, and movie-lover. Currently with <a href="https://www.caxiam.com/" target="_blank">@caxiam</a>, previously <a href="https://purplerockscissors.com/" target="_blank">@prplrckscssrs</a>.</div>
+                  </div>
+                  <ul className="social list-unstyled ac">
                     <TwitterProfile username="aaronfischer" fetchCount="10" callbackName="callbackCity" />
                     <FlickrProfile />
                     <GitHubProfile />
-                    <li><a href="mailto:aaron@gofisching.com?subject=Contacting you via your website"><i className="icon-mail-1"></i>Email</a></li>
+                    <li>
+                      <a href="https://dribbble.com/aaronfischer" target="_blank">
+                        <i className="fab fa-dribbble"></i>
+                        <span className="hoverable ac">
+                          Dribbble
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://500px.com/aaronfischer" target="_blank">
+                        <i className="fab fa-500px"></i>
+                        <span className="hoverable ac">
+                          500px
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/aaronbrycefischer/" target="_blank">
+                        <i className="fab fa-linkedin-in"></i>
+                        <span className="hoverable ac">
+                          LinkedIn
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:aaron@gofisching.com?subject=Contacting you via your website">
+                        <i className="icon-mail-1"></i>
+                        <span className="hoverable ac">
+                          Email
+                        </span>
+                      </a>
+                    </li>
                   </ul>
-                  <div className="about-me al">
-                    <div>I am a Front-End Engineer, hobby-photographer, educator, forever-student, father, apple nerd, and movie-lover</div>
-                  </div>
                 </div>
               </div>
             </div>
           </aside>
-          <section className="col-16 pad-col-12 desk-col-13 ">
+          <section className="col-16 pad-col-11 desk-col-12 ">
             <SwiperWrapper>
               <SwiperSlide
                 name="WeDrinkin'"

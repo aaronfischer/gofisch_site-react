@@ -24,9 +24,11 @@ class GitHubProfile extends Component {
     return (
       <li className="github">
         <a href="https://gist.github.com/Aaronfischer" target="_blank">
-          <i className="icon-github-1"></i>
-          Gists
-          <span className="fr count">{isLoading ? '...' : publicGists}</span>
+          <i className="fab fa-github-alt"></i>
+          <span className="hoverable al">
+            Gists
+            <span className="fr count">{isLoading ? '...' : publicGists}</span>
+          </span>
         </a>
       </li>
     );

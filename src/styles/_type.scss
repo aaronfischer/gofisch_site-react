@@ -7,7 +7,8 @@
 *
 *-------------------------------------------------------------------------*/
 
-$defaultFont: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$defaultFont: "Ubuntu", Helvetica, Arial, sans-serif;
+$oswald: "Oswald", $defaultFont;
 
 $text: 16px;
 $line-height: 1.5em;
@@ -23,7 +24,7 @@ body {
     font-family: $defaultFont;
     font-size: $text;
     line-height: $line-height;
-    color: #333333;
+    color: $prplDark;
 }
 
 /* Headings */
@@ -39,8 +40,9 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-weight: normal;
-    line-height: $line-height;
+  font-family:$oswald;
+  font-weight: normal;
+  line-height: $line-height;
 }
 h1 small,
 h2 small,
@@ -74,7 +76,6 @@ h6 .small,
 
 h1,
 .h1 {
-    font-family:$defaultFont;
     font-size: 1.75em;
     line-height:1.2em;
     margin: .67em 0;
@@ -82,22 +83,20 @@ h1,
 
 h2,
 .h2 {
-    font-family:$defaultFont;
     font-size: 1.5em;
     line-height:1.1em;
+    letter-spacing:0.025em;
+    font-weight:100;
 }
 
 h3,
 .h3 {
-    font-family:$defaultFont;
-    font-weight:200;
     font-size: 1.2em;
     line-height:1.1em;
 }
 
 h4,
 .h4 {
-    font-family:$defaultFont;
     font-size: 1em;
     line-height:1.1em;
 }
@@ -107,7 +106,7 @@ h5,
     font-family:$defaultFont;
     text-transform:uppercase;
     font-weight:900;
-    letter-spacing:0.06em;
+    letter-spacing:0.1em;
     font-size: 0.9em;
 }
 
