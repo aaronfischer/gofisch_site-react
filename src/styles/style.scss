@@ -37,7 +37,7 @@ section{
     height:100%;
 }
 aside{
-    // position:fixed;
+    position:absolute;
     height:auto;
     left:0;
     right:0;
@@ -47,6 +47,7 @@ aside{
     overflow-x:hidden;
     background-color:$offwhite;
     color:$prplDark;
+    z-index:2;
     @include breakpoint(pad){
         height:100%;
     }
