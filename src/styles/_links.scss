@@ -7,7 +7,7 @@
 *
 *-------------------------------------------------------------------------*/
 
-$link-color: #FF7F11;
+$link-color: $orange;
 
 .btn{
     position:relative;
@@ -18,17 +18,18 @@ $link-color: #FF7F11;
     font-weight:400;
     color:$orange;
     padding:15px 30px;
-    background-color:white;
+    background-color:transparent;
     text-decoration: none;
     border:1px solid $orange;
     letter-spacing:1px;
     border-radius:50px;
     transition:all 0.3s ease;
     margin-right:10px;
-    &:hover{
+    &:hover,
+    &.active{
         color:white;
         background-color:$orange;
-        border-radius:0;
+        // border-radius:0;
         transition:all 0.3s ease;
         // background-color:darken($orange,20%);
     }
@@ -54,14 +55,14 @@ $link-color: #FF7F11;
         }
     }
     /* button sizes */
-    &.small{
-        font-size:0.75em;
-        padding:10px 11px;
+    &.btn-sm{
+        font-size:0.65em;
+        padding:10px 20px;
         &:active{
             top:1px;
         }
     }
-    &.large{
+    &.btn-lg{
         padding:25px 50px;
         &:active{
             top:1px;
@@ -71,8 +72,27 @@ $link-color: #FF7F11;
         display:block;
         text-align:center;
     }
+    &.btn-animate-icon{
+        i{
+            position:relative;
+            transition:all 0.3s ease;
+            left:0;
+        }
+        &:hover{
+            i{
+                left:8px;
+                transition:all 0.3s ease;
+            }
+        }
+    }
+    &.active.btn-animate-icon{
+        i{
+            left:8px;
+        }
+    }
 }
 a{
     color:$link-color;
     text-decoration:none;
+    cursor:pointer;
 }

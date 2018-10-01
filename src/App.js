@@ -26,7 +26,7 @@ class App extends Component {
       <div className="App container fh">
         <div className="row fh cf">
           <div className="pad-col-5 desk-col-4"></div>
-          <aside className={`col-16 ${isExpanded ? 'pad-col-15 desk-col-14' : 'pad-col-5 desk-col-4'}`}>
+          <aside className="col-16 pad-col-5 desk-col-4">
             <div className="row cf">
               <div className="col-16 pad-col-5 desk-col-4 ac">
                 <div className="top-img">
@@ -39,7 +39,7 @@ class App extends Component {
                   <h1 className="h2">Aaron Bryce Fischer</h1>
                   <h2 className="h5">Front-End Engineer / Designer</h2>
                   <div className="about-me ac">
-                    <div>I am a Front-End Engineer, <a href="https://dribbble.com/aaronfischer" target="_blank">designer</a>, <a href="https://500px.com/aaronfischer" target="_blank">hobby-photographer</a>, <a href="https://valenciacollege.edu/" target="_blank">educator</a>, forever-student, father, apple nerd, and movie-lover. Currently with <a href="https://www.caxiam.com/" target="_blank">@caxiam</a>, previously <a href="https://purplerockscissors.com/" target="_blank">@prplrckscssrs</a>.</div>
+                    <a className={`btn btn-sm btn-animate-icon ${isExpanded ? 'active' : ''}`} onClick={this.handleIsExpandedToggle}>Learn More <i className={`icon ${isExpanded ? 'icon-left-open-big' : 'icon-right-open-big'}`}></i></a>
                   </div>
                   <ul className="social list-unstyled ac">
                     <TwitterProfile username="aaronfischer" fetchCount="10" callbackName="callbackCity" />
@@ -80,115 +80,124 @@ class App extends Component {
                   </ul>
                 </div>
               </div>
-              <div className="col-16 pad-col-10 desk-col-10">
-                {isExpanded ? (
-                  <div className="row cf">
-                    <div className="col-14 pad-col-8 desk-col-8 ci">
-                      <div className="row cf">
-                        <h3 className="h1">
-                          I am a Front-End Engineer, <a href="https://dribbble.com/aaronfischer" target="_blank">designer</a>, <a href="https://500px.com/aaronfischer" target="_blank">hobby-photographer</a>, <a href="https://valenciacollege.edu/" target="_blank">educator</a>, forever-student, father, apple nerd, and movie-lover. Currently with <a href="https://www.caxiam.com/" target="_blank">@caxiam</a>, previously <a href="https://purplerockscissors.com/" target="_blank">@prplrckscssrs</a>.
-                        </h3>
-                        Things I Use:
-                        <ul className="social list-unstyled ac">
-                          <li>
-                            <a href="https://dribbble.com/aaronfischer" target="_blank">
-                              <i className="fab fa-bitbucket"></i>
-                              <span className="hoverable ac">
-                                BitBucket
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://dribbble.com/aaronfischer" target="_blank">
-                              <i className="fab fa-html5"></i>
-                              <span className="hoverable ac">
-                                HTML5
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://dribbble.com/aaronfischer" target="_blank">
-                              <i className="fab fa-sass"></i>
-                              <span className="hoverable ac">
-                                SASS
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://dribbble.com/aaronfischer" target="_blank">
-                              <i className="fab fa-digital-ocean"></i>
-                              <span className="hoverable ac">
-                                Digital Ocean
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://dribbble.com/aaronfischer" target="_blank">
-                              <i className="fab fa-js"></i>
-                              <span className="hoverable ac">
-                                Javascript
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://dribbble.com/aaronfischer" target="_blank">
-                              <i className="fab fa-ember"></i>
-                              <span className="hoverable ac">
-                                Ember.js
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://dribbble.com/aaronfischer" target="_blank">
-                              <i className="fab fa-react"></i>
-                              <span className="hoverable ac">
-                                React.js
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://dribbble.com/aaronfischer" target="_blank">
-                              <i className="fab fa-npm"></i>
-                              <span className="hoverable ac">
-                                npm
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://dribbble.com/aaronfischer" target="_blank">
-                              <i className="fab fa-git"></i>
-                              <span className="hoverable ac">
-                                Git
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://dribbble.com/aaronfischer" target="_blank">
-                              <i className="fab fa-github"></i>
-                              <span className="hoverable ac">
-                                Github
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://dribbble.com/aaronfischer" target="_blank">
-                              <i className="fab fa-gulp"></i>
-                              <span className="hoverable ac">
-                                Gulp
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                ) : (
-                  <div>...</div>
-                )}
-              </div>
             </div>
           </aside>
-          <section className="col-16 pad-col-11 desk-col-12">
+          <section className={`section-about-me col-16 pad-col-10 desk-col-10 ${isExpanded ? 'active' : ''}`}>
+            {isExpanded ? (
+              <div className="row cf padding-top-80">
+                <div className="row cf">
+                  <div className="col-14 pad-col-8 desk-col-8 ci">
+                    <h3 className="h1 margin-bottom-50">
+                      I am a Front-End Engineer, <a href="https://dribbble.com/aaronfischer" target="_blank">designer</a>, <a href="https://500px.com/aaronfischer" target="_blank">hobby-photographer</a>, <a href="https://valenciacollege.edu/" target="_blank">educator</a>, forever-student, father, apple nerd, and movie-lover. Currently with <a href="https://www.caxiam.com/" target="_blank">@caxiam</a>, previously <a href="https://purplerockscissors.com/" target="_blank">@prplrckscssrs</a>.
+                    </h3>
+                  </div>
+                </div>
+                <div className="row cf padding-top-25 padding-bottom-25">
+                  <div className="col-14 pad-col-8 desk-col-8 ci">
+                    <h5 className="margin-top-0">Technologies I Use(d):</h5>
+                    <ul className="social list-unstyled">
+                      <li>
+                        <a href="https://bitbucket.org/" target="_blank">
+                          <i className="fab fa-bitbucket"></i>
+                          <span className="hoverable ac">
+                            BitBucket
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">
+                          <i className="fab fa-html5"></i>
+                          <span className="hoverable ac">
+                            HTML5
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://sass-lang.com/" target="_blank">
+                          <i className="fab fa-sass"></i>
+                          <span className="hoverable ac">
+                            SASS
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://m.do.co/c/a22e29aebfa1" target="_blank">
+                          <i className="fab fa-digital-ocean"></i>
+                          <span className="hoverable ac">
+                            Digital Ocean
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                          <i className="fab fa-js"></i>
+                          <span className="hoverable ac">
+                            Javascript
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.emberjs.com/" target="_blank">
+                          <i className="fab fa-ember"></i>
+                          <span className="hoverable ac">
+                            Ember.js
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://reactjs.org/" target="_blank">
+                          <i className="fab fa-react"></i>
+                          <span className="hoverable ac">
+                            React.js
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.npmjs.com/" target="_blank">
+                          <i className="fab fa-npm"></i>
+                          <span className="hoverable ac">
+                            npm
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://git-scm.com/" target="_blank">
+                          <i className="fab fa-git"></i>
+                          <span className="hoverable ac">
+                            Git
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/" target="_blank">
+                          <i className="fab fa-github"></i>
+                          <span className="hoverable ac">
+                            Github
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://gulpjs.com/" target="_blank">
+                          <i className="fab fa-gulp"></i>
+                          <span className="hoverable ac">
+                            Gulp
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="row cf">
+                  <div className="col-14 pad-col-8 desk-col-8 ci">
+                    <a className={`btn btn-sm btn-animate-icon btn-mobile-only ${isExpanded ? 'active' : ''}`} onClick={this.handleIsExpandedToggle}>Go Back <i className={`icon ${isExpanded ? 'icon-left-open-big' : 'icon-right-open-big'}`}></i></a>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div></div>
+            )}
+          </section>
+          <section className="section-slider col-16 pad-col-11 desk-col-12">
             <SwiperWrapper>
               <SwiperSlide
                 name="WeDrinkin'"
