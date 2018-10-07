@@ -39,7 +39,7 @@ class App extends Component {
                   <h1 className="h2">Aaron Bryce Fischer</h1>
                   <h2 className="h5">Front-End Engineer / Designer</h2>
                   <div className="about-me ac">
-                    <a className={`btn btn-sm btn-animate-icon ${isExpanded ? 'active' : ''}`} onClick={this.handleIsExpandedToggle}>Learn More <i className={`icon ${isExpanded ? 'icon-left-open-big' : 'icon-right-open-big'}`}></i></a>
+                    <a className={`btn btn-sm btn-animate-icon ${isExpanded ? 'active' : ''}`} onClick={this.handleIsExpandedToggle}>About <i className={`icon ${isExpanded ? 'icon-left-open-big' : 'icon-right-open-big'}`}></i></a>
                   </div>
                   <ul className="social list-unstyled ac">
                     <TwitterProfile username="aaronfischer" fetchCount="10" callbackName="callbackCity" />
@@ -88,7 +88,7 @@ class App extends Component {
                 <div className="row cf">
                   <div className="col-14 pad-col-8 desk-col-8 ci">
                     <h3 className="h1 margin-bottom-50">
-                      I am a Front-End Engineer, <a href="https://dribbble.com/aaronfischer" target="_blank">designer</a>, <a href="https://500px.com/aaronfischer" target="_blank">hobby-photographer</a>, <a href="https://valenciacollege.edu/" target="_blank">educator</a>, forever-student, father, apple nerd, and movie-lover. Currently with <a href="https://www.caxiam.com/" target="_blank">@caxiam</a>, previously <a href="https://purplerockscissors.com/" target="_blank">@prplrckscssrs</a>.
+                      I am a Front-End Engineer, <a href="https://dribbble.com/aaronfischer" target="_blank">designer</a>, <a href="https://500px.com/aaronfischer" target="_blank">hobby-photographer</a>, <a href="https://valenciacollege.edu/" target="_blank">educator</a>, forever-student, father, apple nerd, and movie-lover. Working with <a href="https://www.caxiam.com/" target="_blank">@caxiam</a>, previously <a href="https://purplerockscissors.com/" target="_blank">@prplrckscssrs</a>.
                     </h3>
                   </div>
                 </div>
@@ -206,13 +206,13 @@ class App extends Component {
                 img="assets/media/img/work/wedrinkin.png"
                 link="https://appsto.re/us/SdCL4.i"
                 linkName="Download App"/>
-              {/* <SwiperSlide
+              <SwiperSlide
                 name="Ivanhoe Brewing Co"
                 slide="ivanhoe"
                 responsibilities="Development | Wordpress | Frontend | Backend"
                 img="assets/media/img/work/ivanhoe.png"
                 link="https://ivanhoeparkbrewing.com/"
-                linkName="Visit Site"/> */}
+                linkName="Visit Site"/>
               <SwiperSlide
                 name="Ember Tabular"
                 slide="tabular"
