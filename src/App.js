@@ -207,11 +207,25 @@ class App extends Component {
                 link="https://appsto.re/us/SdCL4.i"
                 linkName="Download App"/>
               <SwiperSlide
+                name="Omnigage"
+                slide="omnigage"
+                responsibilities="Development | EmberJS | Application"
+                img="assets/media/img/work/omnigage.png"
+                link="https://omnigage.com/"
+                linkName="Visit Site"/>
+              <SwiperSlide
                 name="Ivanhoe Brewing Co"
                 slide="ivanhoe"
                 responsibilities="Development | Wordpress | Frontend | Backend"
                 img="assets/media/img/work/ivanhoe.png"
                 link="https://ivanhoeparkbrewing.com/"
+                linkName="Visit Site"/>
+              <SwiperSlide
+                name="Meyers Research"
+                slide="meyers"
+                responsibilities="Development | Wordpress | Frontend | Backend"
+                img="assets/media/img/work/meyers.png"
+                link="https://meyersresearchllc.com/"
                 linkName="Visit Site"/>
               <SwiperSlide
                 name="Ember Tabular"
@@ -233,6 +247,13 @@ class App extends Component {
                 responsibilities="Development | Drupal | Frontend | Backend"
                 img="assets/media/img/work/ahu.png"
                 link="https://www.ahu.edu/"
+                linkName="Visit Site"/>
+              <SwiperSlide
+                name="BAC Sales"
+                slide="bacsales"
+                responsibilities="Development | EmberJS | Application"
+                img="assets/media/img/work/bacsales.png"
+                link="https://bacsales.com/"
                 linkName="Visit Site"/>
               <SwiperSlide
                 name="Modernizing Medicine"
