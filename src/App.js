@@ -88,7 +88,7 @@ class App extends Component {
                 <div className="row cf">
                   <div className="col-14 pad-col-8 desk-col-8 ci">
                     <h3 className="h1 margin-bottom-50">
-                      I am a Front-End Engineer, <a href="https://dribbble.com/aaronfischer" target="_blank">designer</a>, <a href="https://500px.com/aaronfischer" target="_blank">hobby-photographer</a>, <a href="https://valenciacollege.edu/" target="_blank">educator</a>, forever-student, father, apple nerd, and movie-lover. Working with <a href="https://art19.com/" target="_blank">@art19</a>, previously <a href="https://www.caxiam.com/" target="_blank">@caxiam</a> & <a href="https://purplerockscissors.com/" target="_blank">@prplrckscssrs</a>.
+                      I am a Senior Front-End Engineer, <a href="https://dribbble.com/aaronfischer" target="_blank">designer</a>, <a href="https://500px.com/aaronfischer" target="_blank">hobby-photographer</a>, <a href="https://valenciacollege.edu/" target="_blank">educator</a>, forever-student, father, apple nerd, and movie-lover. Working <a href="https://art19.com/" target="_blank">@art19</a>, previously <a href="https://www.caxiam.com/" target="_blank">@caxiam</a> & <a href="https://purplerockscissors.com/" target="_blank">@prplrckscssrs</a>.
                     </h3>
                   </div>
                 </div>
